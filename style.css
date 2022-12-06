@@ -1,0 +1,149 @@
+/* font-family: 'Barlow Semi Condensed', sans-serif; */
+
+*{
+    box-sizing: border-box;
+}
+
+header {
+    display:none;
+}
+
+body {
+
+ font-family: 'Barlow Semi Condensed', sans-serif; 
+ font-size:13px;
+ display:flex;
+ justify-content: center;
+ align-items: center;
+ height:100vh;
+ background-color:hsl(210, 46%, 95%) ;
+
+}
+
+.container {
+    margin: 2rem auto;
+    max-width:1000px;
+    display:grid;
+    grid-template-columns: 0.77fr 0.23fr;
+    gap:1rem;
+}
+
+.row1 {
+    display:flex;
+    gap:1rem;
+    margin-bottom:1rem;
+}
+
+.row2 {
+    display:flex;
+    gap:1rem;
+    
+}
+
+.card1 {
+    background-color: hsl(263, 55%, 52%);
+    padding:1.5rem;
+    border-radius: 10px;
+    color:white;
+    background-image: url(./images/bg-pattern-quotation.svg);
+    background-repeat:no-repeat ;
+    background-position: right 4rem top 0rem
+}
+
+.card2 {
+    background-color:  hsl(217, 19%, 35%);
+    padding:1.5rem;
+    border-radius: 10px;
+    color:white;
+}
+
+.card3 {
+    background-color:  white;
+    padding:1.5rem ;
+    border-radius: 10px;
+    color:hsl(219, 29%, 14%);
+    flex-grow:1;
+    padding-bottom: 0.5rem;
+    
+    
+    
+}
+.card4 {
+    background-color:  hsl(219, 29%, 14%);
+    padding:1.5rem;
+    
+    border-radius: 10px;
+    color:white;
+    max-width:68%;
+    padding-bottom: 0.5rem;
+}
+
+.card5 {
+    background-color:  white;
+    padding:1rem ;
+    border-radius: 10px;
+    width:auto;
+    height:100%;
+    padding-bottom: 0.5rem;
+}
+
+.person-information {
+    padding-bottom: 1rem;
+}
+.person-information p{
+    margin-bottom:-0.5rem;
+}
+
+
+
+img {
+    float:left;
+    border-radius: 50px;
+    margin-right:1rem;
+    margin-top:-0.5rem;
+    border: 1px solid white;
+}
+
+.paragraph{
+    line-height: 1.5;
+    
+}
+
+
+@media only screen and (max-width:768px) {
+
+    body {
+        height:auto;
+        margin: auto 1rem;
+    }
+    .container {
+       
+        grid-template-columns: 1fr;
+        
+    }
+
+    
+
+    .row1 {
+        display:block;
+        margin:0;
+        
+       
+        
+    }
+    
+    .row2 {
+        display:block;
+       
+        
+    }
+
+    .card1, .card2, .card3, .card4{
+        margin-top:1rem;
+    }
+
+    .card4 {
+        max-width: 100%;
+        
+    }
+}
